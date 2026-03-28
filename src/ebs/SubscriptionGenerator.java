@@ -46,7 +46,7 @@ public class SubscriptionGenerator {
         }
         
         long endTime = System.currentTimeMillis();
-        System.out.println("Generated " + config.numMessages + " messages using " + config.numThreads + " thread(s) in " + (endTime - startTime) + " ms");
+        System.out.println("[Subscriptions] Generated " + config.numMessages + " messages using " + config.numThreads + " thread(s) in " + (endTime - startTime) + " ms -> " + config.outputFilePrefix + "_*.txt");
     }
     
     private boolean[] exactDistribution(int total, double percentage) {
