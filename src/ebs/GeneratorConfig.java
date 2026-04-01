@@ -14,8 +14,8 @@ public class GeneratorConfig {
     
     public final String outputFilePrefix;
     
-    public GeneratorConfig(int numMessages, int numThreads, double freqCompany, double freqValue, 
-                           double freqDrop, double freqVariation, double freqDate, 
+    public GeneratorConfig(int numMessages, int numThreads, double freqCompany, double freqValue,
+                           double freqDrop, double freqVariation, double freqDate,
                            double companyEqFreq, String outputFilePrefix) {
         this.numMessages = numMessages;
         this.numThreads = numThreads;
@@ -26,5 +26,17 @@ public class GeneratorConfig {
         this.freqDate = freqDate;
         this.companyEqFreq = companyEqFreq;
         this.outputFilePrefix = outputFilePrefix;
+    }
+
+    public GeneratorConfig(int numMessages, int numThreads, String outputFilePrefix) {
+        this.numMessages = numMessages;
+        this.numThreads = numThreads;
+        this.outputFilePrefix = outputFilePrefix;
+        this.freqCompany = 0;
+        this.freqValue = 0;
+        this.freqDrop = 0;
+        this.freqVariation = 0;
+        this.freqDate = 0;
+        this.companyEqFreq = 0;
     }
 }

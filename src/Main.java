@@ -20,16 +20,7 @@ public class Main {
             "sub_seq"
         );
         new SubscriptionGenerator(seqConfig).generate();
-        new PublicationGenerator(new GeneratorConfig(
-            numMessages, 1,
-            0.9, // 90% company
-            0.5, // 50% value
-            0.5, // 50% drop
-            0.4, // 40% variation
-            0.3, // 30% date
-            0.7, // 70% company equality operator
-            "pub_seq"
-        )).generate();
+        new PublicationGenerator(new GeneratorConfig(numMessages, 1, "pub_seq")).generate();
 
         System.out.println("\n=========================================");
         System.out.println("Running PARALLEL generation (4 threads)");
@@ -45,15 +36,6 @@ public class Main {
             "sub_par"
         );
         new SubscriptionGenerator(parConfig).generate();
-        new PublicationGenerator(new GeneratorConfig(
-            numMessages, 4,
-            0.9, // 90% company
-            0.5, // 50% value
-            0.5, // 50% drop
-            0.4, // 40% variation
-            0.3, // 30% date
-            0.7, // 70% company equality operator
-            "pub_par"
-        )).generate();
+        new PublicationGenerator(new GeneratorConfig(numMessages, 4, "pub_par")).generate();
     }
 }
