@@ -30,7 +30,7 @@ Se generează câte 1.000.000 de publicații și subscripții, scrise în fișie
 | Procesor | Tip | 1 thread | 4 threads |
 |---|---|---|---|
 | AMD Ryzen 5 6600HS (3.30 GHz) | Subscripții | ~840 ms | ~441 ms |
-| AMD Ryzen 5 6600HS (3.30 GHz) | Publicații | — | — |
+| AMD Ryzen 5 6600HS (3.30 GHz) | Publicații | ~945 ms | ~476ms  |
 | AMD Ryzen 7 8845HS (3.80 GHz) | Subscripții | ~564 ms | ~257 ms |
 | AMD Ryzen 7 8845HS (3.80 GHz) | Publicații | ~415 ms | ~274 ms |
 
